@@ -1,6 +1,6 @@
 {
   "name": "dtcm",
-  "app_id": "",
+  "app_id": "ee666043",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
