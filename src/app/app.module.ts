@@ -6,6 +6,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import {ImageViewerController, IonicImageViewerModule} from 'ionic-img-viewer';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ZoomAreaModule } from 'ionic2-zoom-area';
 
 @NgModule({
   declarations: [
@@ -14,6 +17,9 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
+    IonicImageViewerModule,
+    BrowserAnimationsModule,
+    ZoomAreaModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -25,6 +31,7 @@ import { HomePage } from '../pages/home/home';
     StatusBar,
     PhotoViewer,
     SplashScreen,
+    IonicImageViewerModule,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
